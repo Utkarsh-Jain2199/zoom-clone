@@ -1,5 +1,10 @@
 package com.mountblue.zoom.entities;
 
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Entity
 public class Meeting {
     @Id
@@ -10,11 +15,4 @@ public class Meeting {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
-    @ManyToOne
-    private User host;
-
-    @ManyToMany
-    private List<User> participants;
-
-    // Other attributes, getters, setters, and methods
 }
