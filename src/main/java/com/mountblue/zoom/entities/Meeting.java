@@ -22,6 +22,11 @@ public class Meeting {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
+    public Meeting(String meetingId, LocalDateTime startTime, LocalDateTime endTime) {
+        this.meetingId = meetingId;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
 
     public Meeting() {
     }
