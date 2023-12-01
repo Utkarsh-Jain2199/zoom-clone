@@ -1,5 +1,10 @@
 package com.mountblue.zoom.entities;
 
+
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,6 +21,7 @@ public class Meeting {
     private String meetingId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
+
 
     public Meeting() {
     }
