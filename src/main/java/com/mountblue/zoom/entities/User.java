@@ -13,6 +13,13 @@ import jakarta.persistence.Id;
 
         private String username;
         private String password;
+
+        public User(String username, String password, String email) {
+            this.username = username;
+            this.password = password;
+            this.email = email;
+        }
+
         private String email;
 
         public Long getId() {
